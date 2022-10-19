@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">VacationsApp</string>
     <string name="fullname">Full Name :</string>
+    <string name="date">Date :</string>
 </resources>
