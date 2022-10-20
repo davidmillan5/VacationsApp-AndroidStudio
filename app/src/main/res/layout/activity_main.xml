@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -20,24 +21,26 @@
 
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:src="@drawable/iconTravel"
-        android:layout_width="74dp"
-        android:layout_height="74dp"
+        android:src="@drawable/travelimg"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
         android:scaleType="fitStart"
-        android:layout_marginTop="-14dp"
+        android:layout_marginTop="-16dp"
         android:layout_marginLeft="64dp"
         app:shapeAppearanceOverlay="@style/roundimageview"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
     <TextView
         android:text="@string/fullname"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
+        android:textSize="20sp"
+        android:textAlignment="gravity"
         />
 
     <EditText
@@ -55,30 +58,265 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
 
         <TextView
             android:text="@string/date"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:layout_marginTop="6sp"
+            android:textAlignment="gravity"
             />
 
         <EditText
             android:id="@+id/date"
-            android:hint="MM/DD/YYYY"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:drawableStart="@drawable/ic_baseline_date_range_24"
-            android:drawablePadding="5dp"
-            android:textSize="18sp"
-            android:layout_marginTop="6sp"/>
+            android:inputType="date"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+
+    <TextView
+        android:text="@string/destination"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        android:textAlignment="gravity"
+        />
+
+    <Spinner
+        android:id="@+id/destinations"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <TextView
+        android:text="@string/numberofpeople"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        android:textAlignment="gravity"
+        />
+
+    <EditText
+        android:id="@+id/numberOfPeople"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_baseline_people_alt_24"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+
+        <TextView
+            android:text="@string/numberofdays"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:textAlignment="gravity"
+            />
+
+        <EditText
+            android:id="@+id/numberOfDays"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_baseline_wb_sunny_24"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        >
+
+        <TextView
+            android:text="@string/additionals"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:textAlignment="gravity"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/cityTour"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/citytour"
+                android:checked="true"
+                android:textSize="20dp"
+                android:drawableEnd="@drawable/ic_baseline_location_city_24"/>
+
+            <RadioButton
+                android:id="@+id/nightclub"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nightclub"
+                android:textSize="20dp"
+                android:drawableEnd="@drawable/ic_baseline_nightlife_24"
+                />
+
+
+        </RadioGroup>
 
     </LinearLayout>
 
 
+    <LinearLayout
+        android:text="@string/additionals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16sp"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+    <TextView
+        android:text="@string/totalplan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:drawableBottom="@drawable/ic_baseline_attach_money_24"
+        />
+
+
+        <TextView
+            android:text="@string/discount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:drawableBottom="@drawable/ic_baseline_discount_24"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+
+
+
+        <TextView
+            android:id="@+id/totalplan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/totaldiscount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+
+
+
+        <Button
+            android:id="@+id/calculate"
+            android:text="@string/calculate"
+            android:textAllCaps="false"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:textSize="20sp"
+            android:textFontWeight="700"
+
+
+            />
+
+        <Button
+            android:id="@+id/clean"
+            android:text="@string/clean"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"
+            android:textSize="20sp"
+            android:textFontWeight="700"
+            />
+
+
+    </LinearLayout>
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:background="@color/green"
+      android:layout_marginTop="54dp"
+      android:text="@string/copyrights"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      android:gravity="center"
+      />
 
 
 </LinearLayout>

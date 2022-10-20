@@ -2,4 +2,15 @@
     <string name="app_name">VacationsApp</string>
     <string name="fullname">Full Name :</string>
     <string name="date">Date :</string>
+    <string name="destination">Destinations : </string>
+    <string name="numberofpeople">N° of Persons : </string>
+    <string name="numberofdays">N° of Days :</string>
+    <string name="additionals">Additionals :</string>
+    <string name="citytour">City Tour</string>
+    <string name="nightclub">Nightclub</string>
+    <string name="totalplan">Total Plan</string>
+    <string name="discount">Total Discount</string>
+    <string name="clean">Clean</string>
+    <string name="calculate">Calculate</string>
+    <string name="copyrights">All Rights Reserved</string>
 </resources>
