@@ -84,6 +84,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             xadditionals = 80000;
                         }
 
+
+
                         double xtotal = (cost* xnumberOfDays * xnumberOfPeople)+(xadditionals*xnumberOfPeople);
                         double xdiscount = xtotal * discountAmount;
                         double xtotalDiscount = xtotal - xdiscount;
